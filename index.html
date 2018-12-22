@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Crystals Collector</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+
+        <!-- Added link to the jQuery Library -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </head>
+
+
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12" id="game-title">
+                    <h1>CRYSTALS COLLECTOR</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12" id="instructions">
+                    <p>
+                        You will be given a random number at the start of the game
+                    </p>
+                    <p>
+                        There are four crystals below. By clilcking on a crystal you will add a specific amount of points to your total score.
+                    </p>
+                    <p>
+                        You win the game by matching your total score to the random number given at the begining; you lose the game if your total score goes above the random number.
+                    </p>
+                    <p>
+                        The value of each crystal is hidden from you until you click on it.
+                    </p>
+                    <p>
+                        Each time when the game starts, the game will change the values of each crystal.
+                    </p>
+                </div>
+                <button type="button" class="btn btn-warning btn-lg" id="play-button" disabled><span class="btn-txt">Let's collect some crystals.</span></button>
+            </div>
+            <div class="row">
+                <div class="col-md-6 stats">
+                    <h4> Points:</h4> <br>
+                    <h4><span id="points">0</span></h4>
+                </div>
+                <div class="col-md-6 stats">
+                    <h4> Wins: <span id="win-count">0</span></h4>
+                    <h4> Losses: <span id="losses-count">0</span></h4>
+                    <h4> # of turns: <span id="turns-count">0</span></h4>
+                    <h4> Best round: <span id="best-count">--</span></h4>
+                </div>
+            </div>
+            <div class="row images-row">
+                <div class="col-sm-3"> <!--col-xs-3 not working-->
+                    <img src="assets/images/diamond.png" class="img-thumbnail rounded mx-auto d-block crystal-img" alt="diamond" id="diamond">
+                </div>
+                <div class="col-sm-3">
+                    <img src="assets/images/emerald.png" class="img-thumbnail rounded mx-auto d-block crystal-img" alt="emerald" id="emerald">
+                </div>
+                <div class="col-sm-3">
+                    <img src="assets/images/ruby.png" class="img-thumbnail rounded mx-auto d-block crystal-img" alt="ruby" id="ruby">
+                </div>
+                <div class="col-sm-3">
+                    <img src="assets/images/sapphire.png" class="img-thumbnail rounded mx-auto d-block crystal-img" alt="sapphire" id="sapphire">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 stats">
+                    <h4>Total Score: <span id="score-count">0</span>  </h4>
+                </div>
+            </div>
+        </div>
+
+
+        <script type="text/javascript" src="assets/javascript/game.js"></script>
+    </body>
+
+</html>

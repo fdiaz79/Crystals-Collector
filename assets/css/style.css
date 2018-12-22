@@ -1,0 +1,45 @@
+body {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    background-image: url(../images/vintage-concrete.png);
+    font-weight: bolder;
+    color: #382929;
+}
+
+#game-title {
+    margin: auto;
+    text-align: center;
+    color: #2f1515;
+    padding: 2%;
+}
+
+#instructions {
+    padding: 1%;
+}
+
+.btn-txt {
+    margin: auto;
+}
+
+#play-button {
+    margin: auto;
+    padding: 2%;
+}
+
+.stats {
+    padding: 1%;
+}
+
+.images-row {
+    padding: 2% 1%;
+}
+
+/* @media screen and (max-width:767px) {
+    .crystal-img {
+        width: 40%;
+        margin: auto;
+    }
+} */
+
+/* .crystal-img {
+    max-width: 250px;
+} */
